@@ -7,15 +7,16 @@
  * @len: length of the string
  * @next: points to the next node
  *
- * Description: singly linked list node structure
+ * Description: Defines a node for a singly linked list.
  */
 typedef struct custom_node_s
 {
-    char *str;
-    unsigned int len;
-    struct custom_node_s *next;
+	char *str;
+	unsigned int len;
+	struct custom_node_s *next;
 } custom_list_t;
 
+/* Function prototypes */
 size_t custom_print_list(const custom_list_t *h);
 size_t custom_list_length(const custom_list_t *h);
 custom_list_t *custom_add_node(custom_list_t **head, const char *str);
