@@ -7,7 +7,7 @@
  * Return: The count of nodes in the list
  */
 size_t listint_len(const listint_t *head)
-i{
+{
 	size_t node_count = 0;
 
 	while (head)
